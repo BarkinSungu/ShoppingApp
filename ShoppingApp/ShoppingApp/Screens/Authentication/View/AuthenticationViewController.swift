@@ -70,7 +70,7 @@ class AuthenticationViewController: UIViewController {
     }
     
     func openMainPage (){
-        navigationController?.pushViewController(MainPageViewController(), animated: true)
+        navigationController?.pushViewController(TabBarController(), animated: true)
     }
 
     @IBAction func signButtonTapped(_ sender: UIButton) {

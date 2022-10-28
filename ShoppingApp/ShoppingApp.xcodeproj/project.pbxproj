@@ -16,6 +16,9 @@
 		DA7CBAF7290AE6C2005AA0A8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF6290AE6C2005AA0A8 /* FirebaseAuth */; };
 		DA7CBAF9290AE6C2005AA0A8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF8290AE6C2005AA0A8 /* FirebaseFirestore */; };
 		DA7CBAFB290BC065005AA0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBAFA290BC065005AA0A8 /* LaunchScreen.storyboard */; };
+		DA7CBAFD290C1282005AA0A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBAFC290C1282005AA0A8 /* TabBarController.swift */; };
+		DA7CBB02290C13A2005AA0A8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB00290C13A2005AA0A8 /* ProfileViewController.swift */; };
+		DA7CBB03290C13A2005AA0A8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */; };
 		DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */; };
 		DABECC6E29085B9100F62359 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */; };
 		DABECC73290964CB00F62359 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABECC71290964CB00F62359 /* MainPageViewController.swift */; };
@@ -33,6 +36,9 @@
 		DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAF4290AE166005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAFA290BC065005AA0A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA7CBAFC290C1282005AA0A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DA7CBB00290C13A2005AA0A8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 		DABECC71290964CB00F62359 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +79,6 @@
 			children = (
 				DA2EECC929083FCE00CD5C07 /* App */,
 				DA2EECCA29083FD500CD5C07 /* Screens */,
-				DA7CBAF4290AE166005AA0A8 /* GoogleService-Info.plist */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -91,10 +96,12 @@
 		DA2EECCA29083FD500CD5C07 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DA7CBAFE290C1384005AA0A8 /* Profile */,
 				DABECC6F2909649500F62359 /* Main */,
 				DA2EECD82908544D00CD5C07 /* Authentication */,
 				DA2EECD72908543F00CD5C07 /* LaunchScreen */,
 				DA2EECD62908542E00CD5C07 /* Initial */,
+				DA7CBAFC290C1282005AA0A8 /* TabBarController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 		DA2EECCD2908400D00CD5C07 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				DA7CBAF4290AE166005AA0A8 /* GoogleService-Info.plist */,
 				DA2EECC329083E8C00CD5C07 /* Info.plist */,
 			);
 			path = Plists;
@@ -155,6 +163,23 @@
 			children = (
 				DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */,
 				DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA7CBAFE290C1384005AA0A8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DA7CBAFF290C138C005AA0A8 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DA7CBAFF290C138C005AA0A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA7CBB00290C13A2005AA0A8 /* ProfileViewController.swift */,
+				DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7CBB03290C13A2005AA0A8 /* ProfileViewController.xib in Resources */,
 				DA7CBAFB290BC065005AA0A8 /* LaunchScreen.storyboard in Resources */,
 				DABECC6E29085B9100F62359 /* AuthenticationViewController.xib in Resources */,
 				DA2EECBF29083E8C00CD5C07 /* Assets.xcassets in Resources */,
@@ -260,6 +286,8 @@
 				DABECC73290964CB00F62359 /* MainPageViewController.swift in Sources */,
 				DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */,
 				DA2EECBA29083E8500CD5C07 /* ViewController.swift in Sources */,
+				DA7CBAFD290C1282005AA0A8 /* TabBarController.swift in Sources */,
+				DA7CBB02290C13A2005AA0A8 /* ProfileViewController.swift in Sources */,
 				DA2EECB629083E8500CD5C07 /* AppDelegate.swift in Sources */,
 				DA2EECB829083E8500CD5C07 /* SceneDelegate.swift in Sources */,
 			);
