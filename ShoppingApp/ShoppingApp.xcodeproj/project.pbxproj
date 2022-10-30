@@ -19,10 +19,12 @@
 		DA7CBAFD290C1282005AA0A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBAFC290C1282005AA0A8 /* TabBarController.swift */; };
 		DA7CBB02290C13A2005AA0A8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB00290C13A2005AA0A8 /* ProfileViewController.swift */; };
 		DA7CBB03290C13A2005AA0A8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */; };
+		DA7CBB08290CFF3B005AA0A8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB06290CFF3B005AA0A8 /* SearchViewController.swift */; };
+		DA7CBB09290CFF3B005AA0A8 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB07290CFF3B005AA0A8 /* SearchViewController.xib */; };
 		DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */; };
 		DABECC6E29085B9100F62359 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */; };
-		DABECC73290964CB00F62359 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABECC71290964CB00F62359 /* MainPageViewController.swift */; };
-		DABECC74290964CB00F62359 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABECC72290964CB00F62359 /* MainPageViewController.xib */; };
+		DABECC73290964CB00F62359 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABECC71290964CB00F62359 /* ProductsViewController.swift */; };
+		DABECC74290964CB00F62359 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABECC72290964CB00F62359 /* ProductsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +41,12 @@
 		DA7CBAFC290C1282005AA0A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DA7CBB00290C13A2005AA0A8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		DA7CBB06290CFF3B005AA0A8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DA7CBB07290CFF3B005AA0A8 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
-		DABECC71290964CB00F62359 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		DABECC72290964CB00F62359 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
+		DABECC71290964CB00F62359 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		DABECC72290964CB00F62359 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,9 @@
 		DA2EECCA29083FD500CD5C07 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DA7CBB04290CFF22005AA0A8 /* Search */,
 				DA7CBAFE290C1384005AA0A8 /* Profile */,
-				DABECC6F2909649500F62359 /* Main */,
+				DABECC6F2909649500F62359 /* Products */,
 				DA2EECD82908544D00CD5C07 /* Authentication */,
 				DA2EECD72908543F00CD5C07 /* LaunchScreen */,
 				DA2EECD62908542E00CD5C07 /* Initial */,
@@ -184,19 +189,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		DABECC6F2909649500F62359 /* Main */ = {
+		DA7CBB04290CFF22005AA0A8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DA7CBB05290CFF29005AA0A8 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DA7CBB05290CFF29005AA0A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA7CBB06290CFF3B005AA0A8 /* SearchViewController.swift */,
+				DA7CBB07290CFF3B005AA0A8 /* SearchViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DABECC6F2909649500F62359 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				DABECC70290964A400F62359 /* View */,
 			);
-			path = Main;
+			path = Products;
 			sourceTree = "<group>";
 		};
 		DABECC70290964A400F62359 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DABECC71290964CB00F62359 /* MainPageViewController.swift */,
-				DABECC72290964CB00F62359 /* MainPageViewController.xib */,
+				DABECC71290964CB00F62359 /* ProductsViewController.swift */,
+				DABECC72290964CB00F62359 /* ProductsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,7 +293,8 @@
 				DABECC6E29085B9100F62359 /* AuthenticationViewController.xib in Resources */,
 				DA2EECBF29083E8C00CD5C07 /* Assets.xcassets in Resources */,
 				DA2EECBD29083E8500CD5C07 /* Main.storyboard in Resources */,
-				DABECC74290964CB00F62359 /* MainPageViewController.xib in Resources */,
+				DABECC74290964CB00F62359 /* ProductsViewController.xib in Resources */,
+				DA7CBB09290CFF3B005AA0A8 /* SearchViewController.xib in Resources */,
 				DA7CBAF3290AE155005AA0A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,8 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABECC73290964CB00F62359 /* MainPageViewController.swift in Sources */,
+				DABECC73290964CB00F62359 /* ProductsViewController.swift in Sources */,
 				DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */,
+				DA7CBB08290CFF3B005AA0A8 /* SearchViewController.swift in Sources */,
 				DA2EECBA29083E8500CD5C07 /* ViewController.swift in Sources */,
 				DA7CBAFD290C1282005AA0A8 /* TabBarController.swift in Sources */,
 				DA7CBB02290C13A2005AA0A8 /* ProfileViewController.swift in Sources */,

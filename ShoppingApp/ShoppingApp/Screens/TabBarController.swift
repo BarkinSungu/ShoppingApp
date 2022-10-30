@@ -11,19 +11,31 @@ class TabBarController: UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let mainPageViewController = MainPageViewController()
+        let productsViewController = ProductsViewController()
+        let searchViewController = SearchViewController()
         let profileViewController = ProfileViewController()
         
-        mainPageViewController.title = "Main"
+        let productsNavigationController = UINavigationController(rootViewController: productsViewController)
+        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
+        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
+        
+        productsNavigationController.title = "Products"
+        searchNavigationController.title = "Search"
+        profileNavigationController.title = "Profile"
+        
+        productsViewController.title = "Products"
+        searchViewController.title = "Search"
         profileViewController.title = "Profile"
         
-        self.setViewControllers([mainPageViewController, profileViewController], animated: false)
+        self.setViewControllers([productsNavigationController,
+                                 searchNavigationController,
+                                 profileNavigationController], animated: false)
         
         guard let items = self.tabBar.items else { return }
         
-        let images = ["house", "person"]
+        let images = ["house", "magnifyingglass", "person"]
         
-        for x in 0...1{
+        for x in 0...2{
             if #available(iOS 13.0, *) {
                 items[x].image = UIImage(systemName: images[x])
             } else {
