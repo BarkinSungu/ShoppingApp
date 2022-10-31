@@ -1,14 +1,16 @@
 //
-//  MainPageViewController.swift
+//  ProductsViewController.swift
 //  ShoppingApp
 //
-//  Created by Barkın Süngü on 26.10.2022.
+//  Created by Barkın Süngü on 31.10.2022.
 //
 
 import UIKit
 
 class ProductsViewController: UIViewController {
 
+    @IBOutlet weak var productsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

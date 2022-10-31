@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="ShoppingApp" customModuleProvider="target">
             <connections>
+                <outlet property="emailAdressLabel" destination="hm1-jd-laM" id="M9w-h9-v8v"/>
+                <outlet property="userNameLabel" destination="7qD-wx-fmG" id="eap-zW-Mff"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,17 +21,50 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ProfilePage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2y-Js-Cfg">
-                    <rect key="frame" x="152" y="412" width="87" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MC-5j-N0c">
+                    <rect key="frame" x="16" y="775.66666666666663" width="358" height="34.333333333333371"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Logout"/>
+                    <connections>
+                        <action selector="logoutButtonTapped:" destination="-1" eventType="touchUpInside" id="BFI-4Y-6eU"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="61T-uu-SGn">
+                    <rect key="frame" x="16" y="322" width="358" height="50.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qD-wx-fmG">
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm1-jd-laM">
+                            <rect key="frame" x="0.0" y="30.333333333333314" width="358" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7qD-wx-fmG" firstAttribute="leading" secondItem="61T-uu-SGn" secondAttribute="leading" id="GUd-fr-rxk"/>
+                        <constraint firstAttribute="trailing" secondItem="7qD-wx-fmG" secondAttribute="trailing" id="T59-XZ-FfD"/>
+                        <constraint firstAttribute="trailing" secondItem="hm1-jd-laM" secondAttribute="trailing" id="ZY6-Ix-rTA"/>
+                        <constraint firstItem="hm1-jd-laM" firstAttribute="leading" secondItem="61T-uu-SGn" secondAttribute="leading" id="cdJ-gT-Tg3"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="138" y="21"/>
+            <constraints>
+                <constraint firstItem="3MC-5j-N0c" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="6wh-t9-mpl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="61T-uu-SGn" secondAttribute="trailing" constant="16" id="7mv-EE-eIK"/>
+                <constraint firstItem="3MC-5j-N0c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CQI-XA-vVE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3MC-5j-N0c" secondAttribute="trailing" constant="16" id="gd8-xJ-K5M"/>
+                <constraint firstItem="61T-uu-SGn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="275" id="kt7-dZ-fSi"/>
+                <constraint firstItem="61T-uu-SGn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rgE-K9-05c"/>
+            </constraints>
+            <point key="canvasLocation" x="136.92307692307691" y="20.616113744075829"/>
         </view>
     </objects>
     <resources>
