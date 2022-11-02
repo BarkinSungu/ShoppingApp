@@ -21,8 +21,10 @@
 		DA7CBB03290C13A2005AA0A8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */; };
 		DA7CBB08290CFF3B005AA0A8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB06290CFF3B005AA0A8 /* SearchViewController.swift */; };
 		DA7CBB09290CFF3B005AA0A8 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB07290CFF3B005AA0A8 /* SearchViewController.xib */; };
-		DA7CBB0C290FEAE5005AA0A8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB0A290FEAE5005AA0A8 /* ProductsViewController.swift */; };
-		DA7CBB0D290FEAE5005AA0A8 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB0B290FEAE5005AA0A8 /* ProductsViewController.xib */; };
+		DA7CBB15291143D4005AA0A8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB13291143D4005AA0A8 /* ProductsViewController.swift */; };
+		DA7CBB16291143D4005AA0A8 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB14291143D4005AA0A8 /* ProductsViewController.xib */; };
+		DA7CBB192911464E005AA0A8 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CBB172911464E005AA0A8 /* ProductsCollectionViewCell.swift */; };
+		DA7CBB1A2911464E005AA0A8 /* ProductsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBB182911464E005AA0A8 /* ProductsCollectionViewCell.xib */; };
 		DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */; };
 		DABECC6E29085B9100F62359 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */; };
 /* End PBXBuildFile section */
@@ -43,8 +45,10 @@
 		DA7CBB01290C13A2005AA0A8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		DA7CBB06290CFF3B005AA0A8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DA7CBB07290CFF3B005AA0A8 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		DA7CBB0A290FEAE5005AA0A8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
-		DA7CBB0B290FEAE5005AA0A8 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
+		DA7CBB13291143D4005AA0A8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		DA7CBB14291143D4005AA0A8 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
+		DA7CBB172911464E005AA0A8 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA7CBB182911464E005AA0A8 /* ProductsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCollectionViewCell.xib; sourceTree = "<group>"; };
 		DABECC6B29085B9100F62359 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +210,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DA7CBB0E290FFBF7005AA0A8 /* ProductsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA7CBB172911464E005AA0A8 /* ProductsCollectionViewCell.swift */,
+				DA7CBB182911464E005AA0A8 /* ProductsCollectionViewCell.xib */,
+			);
+			path = ProductsCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		DABECC6F2909649500F62359 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,8 +230,9 @@
 		DABECC70290964A400F62359 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA7CBB0A290FEAE5005AA0A8 /* ProductsViewController.swift */,
-				DA7CBB0B290FEAE5005AA0A8 /* ProductsViewController.xib */,
+				DA7CBB0E290FFBF7005AA0A8 /* ProductsCollectionViewCell */,
+				DA7CBB13291143D4005AA0A8 /* ProductsViewController.swift */,
+				DA7CBB14291143D4005AA0A8 /* ProductsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,7 +308,8 @@
 				DA2EECBF29083E8C00CD5C07 /* Assets.xcassets in Resources */,
 				DA2EECBD29083E8500CD5C07 /* Main.storyboard in Resources */,
 				DA7CBB09290CFF3B005AA0A8 /* SearchViewController.xib in Resources */,
-				DA7CBB0D290FEAE5005AA0A8 /* ProductsViewController.xib in Resources */,
+				DA7CBB1A2911464E005AA0A8 /* ProductsCollectionViewCell.xib in Resources */,
+				DA7CBB16291143D4005AA0A8 /* ProductsViewController.xib in Resources */,
 				DA7CBAF3290AE155005AA0A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +323,8 @@
 			files = (
 				DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */,
 				DA7CBB08290CFF3B005AA0A8 /* SearchViewController.swift in Sources */,
-				DA7CBB0C290FEAE5005AA0A8 /* ProductsViewController.swift in Sources */,
+				DA7CBB15291143D4005AA0A8 /* ProductsViewController.swift in Sources */,
+				DA7CBB192911464E005AA0A8 /* ProductsCollectionViewCell.swift in Sources */,
 				DA2EECBA29083E8500CD5C07 /* ViewController.swift in Sources */,
 				DA7CBAFD290C1282005AA0A8 /* TabBarController.swift in Sources */,
 				DA7CBB02290C13A2005AA0A8 /* ProfileViewController.swift in Sources */,

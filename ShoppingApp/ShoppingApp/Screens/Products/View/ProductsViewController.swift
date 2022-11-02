@@ -2,30 +2,70 @@
 //  ProductsViewController.swift
 //  ShoppingApp
 //
-//  Created by Barkın Süngü on 31.10.2022.
+//  Created by Barkın Süngü on 1.11.2022.
 //
 
 import UIKit
 
 class ProductsViewController: UIViewController {
 
-    @IBOutlet weak var productsTableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    private let screenSize: CGRect = UIScreen.main.bounds
+    private let cellInset: CGFloat = 8.0
+    private let cellMultiplier: CGFloat = 0.5
+    private var cellDimension: CGFloat {
+        screenSize.width * cellMultiplier - cellInset
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: cellDimension, height: cellDimension)
+        collectionView.collectionViewLayout = layout
+        
+        collectionView.register(ProductsCollectionViewCell.nib(),
+                                forCellWithReuseIdentifier: ProductsCollectionViewCell.identifier)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
 
-        // Do any additional setup after loading the view.
     }
 
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ProductsViewController: UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("you tapped me")
     }
-    */
+    
+}
 
+extension ProductsViewController: UICollectionViewDataSource{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductsCollectionViewCell.identifier, for: indexPath) as! ProductsCollectionViewCell
+        
+        if #available(iOS 13.0, *) {
+            cell.configure(with: UIImage(systemName: "house")!)
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        return cell
+    }
+}
+
+extension ProductsViewController: UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: cellDimension, height: cellDimension)
+    }
 }
