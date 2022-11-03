@@ -12,6 +12,11 @@
 		DA2EECBA29083E8500CD5C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EECB929083E8500CD5C07 /* ViewController.swift */; };
 		DA2EECBD29083E8500CD5C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EECBB29083E8500CD5C07 /* Main.storyboard */; };
 		DA2EECBF29083E8C00CD5C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EECBE29083E8C00CD5C07 /* Assets.xcassets */; };
+		DA76E9712913877500138AE2 /* ShoppingAppAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA76E9702913877500138AE2 /* ShoppingAppAPI.framework */; };
+		DA76E9722913877500138AE2 /* ShoppingAppAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA76E9702913877500138AE2 /* ShoppingAppAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA76E97629138CE900138AE2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E97529138CE900138AE2 /* Product.swift */; };
+		DA76E97A29138E4600138AE2 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E97929138E4600138AE2 /* ProductsViewModel.swift */; };
+		DA76E97D2914413A00138AE2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DA76E97C2914413A00138AE2 /* Kingfisher */; };
 		DA7CBAF3290AE155005AA0A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */; };
 		DA7CBAF7290AE6C2005AA0A8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF6290AE6C2005AA0A8 /* FirebaseAuth */; };
 		DA7CBAF9290AE6C2005AA0A8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF8290AE6C2005AA0A8 /* FirebaseFirestore */; };
@@ -29,6 +34,20 @@
 		DABECC6E29085B9100F62359 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABECC6C29085B9100F62359 /* AuthenticationViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA76E9732913877500138AE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA76E9722913877500138AE2 /* ShoppingAppAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DA2EECB229083E8500CD5C07 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2EECB529083E8500CD5C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +56,9 @@
 		DA2EECBC29083E8500CD5C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA2EECBE29083E8C00CD5C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2EECC329083E8C00CD5C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA76E9702913877500138AE2 /* ShoppingAppAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAppAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA76E97529138CE900138AE2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DA76E97929138E4600138AE2 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAF4290AE166005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAFA290BC065005AA0A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA76E97D2914413A00138AE2 /* Kingfisher in Frameworks */,
+				DA76E9712913877500138AE2 /* ShoppingAppAPI.framework in Frameworks */,
 				DA7CBAF7290AE6C2005AA0A8 /* FirebaseAuth in Frameworks */,
 				DA7CBAF9290AE6C2005AA0A8 /* FirebaseFirestore in Frameworks */,
 			);
@@ -71,6 +95,7 @@
 			children = (
 				DA2EECB429083E8500CD5C07 /* ShoppingApp */,
 				DA2EECB329083E8500CD5C07 /* Products */,
+				DA76E96F2913877400138AE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +201,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DA76E96F2913877400138AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA76E9702913877500138AE2 /* ShoppingAppAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA76E97429138CBC00138AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA76E97529138CE900138AE2 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA76E97729138E0A00138AE2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA76E97929138E4600138AE2 /* ProductsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DA7CBAFE290C1384005AA0A8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +271,8 @@
 		DABECC6F2909649500F62359 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				DA76E97729138E0A00138AE2 /* ViewModel */,
+				DA76E97429138CBC00138AE2 /* Model */,
 				DABECC70290964A400F62359 /* View */,
 			);
 			path = Products;
@@ -247,6 +298,7 @@
 				DA2EECAE29083E8500CD5C07 /* Sources */,
 				DA2EECAF29083E8500CD5C07 /* Frameworks */,
 				DA2EECB029083E8500CD5C07 /* Resources */,
+				DA76E9732913877500138AE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +308,7 @@
 			packageProductDependencies = (
 				DA7CBAF6290AE6C2005AA0A8 /* FirebaseAuth */,
 				DA7CBAF8290AE6C2005AA0A8 /* FirebaseFirestore */,
+				DA76E97C2914413A00138AE2 /* Kingfisher */,
 			);
 			productName = ShoppingApp;
 			productReference = DA2EECB229083E8500CD5C07 /* ShoppingApp.app */;
@@ -287,6 +340,7 @@
 			mainGroup = DA2EECA929083E8500CD5C07;
 			packageReferences = (
 				DA7CBAF5290AE6C1005AA0A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DA76E97B2914413A00138AE2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = DA2EECB329083E8500CD5C07 /* Products */;
 			projectDirPath = "";
@@ -322,12 +376,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */,
+				DA76E97A29138E4600138AE2 /* ProductsViewModel.swift in Sources */,
 				DA7CBB08290CFF3B005AA0A8 /* SearchViewController.swift in Sources */,
 				DA7CBB15291143D4005AA0A8 /* ProductsViewController.swift in Sources */,
 				DA7CBB192911464E005AA0A8 /* ProductsCollectionViewCell.swift in Sources */,
 				DA2EECBA29083E8500CD5C07 /* ViewController.swift in Sources */,
 				DA7CBAFD290C1282005AA0A8 /* TabBarController.swift in Sources */,
 				DA7CBB02290C13A2005AA0A8 /* ProfileViewController.swift in Sources */,
+				DA76E97629138CE900138AE2 /* Product.swift in Sources */,
 				DA2EECB629083E8500CD5C07 /* AppDelegate.swift in Sources */,
 				DA2EECB829083E8500CD5C07 /* SceneDelegate.swift in Sources */,
 			);
@@ -476,7 +532,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,7 +561,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +599,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA76E97B2914413A00138AE2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		DA7CBAF5290AE6C1005AA0A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -554,6 +618,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA76E97C2914413A00138AE2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA76E97B2914413A00138AE2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		DA7CBAF6290AE6C2005AA0A8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA7CBAF5290AE6C1005AA0A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

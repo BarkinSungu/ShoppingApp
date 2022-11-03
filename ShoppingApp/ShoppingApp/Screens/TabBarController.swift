@@ -11,7 +11,9 @@ class TabBarController: UITabBarController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let productsViewController = ProductsViewController()
+        let productsViewModel = ProductsViewModel()
+        
+        let productsViewController = ProductsViewController(viewModel: productsViewModel)
         let searchViewController = SearchViewController()
         let profileViewController = ProfileViewController()
         
