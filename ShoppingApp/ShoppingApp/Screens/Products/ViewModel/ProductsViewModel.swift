@@ -18,6 +18,11 @@ protocol ProductsViewModelProtocol{
     var numberOfRows: Int {get}
     func titleForRow(_ row: Int) -> String?
     func imageUrl(_ row: Int) -> String?
+    func idForRow(_ row: Int) -> Int?
+    func priceForRow(_ row: Int) -> Double?
+    func descriptionForRow(_ row: Int) -> String?
+    func categoryForRow(_ row: Int) -> String?
+    func ratingForRow(_ row: Int) -> Rating?
     func fetchProducts()
 }
 
@@ -34,9 +39,29 @@ final class ProductsViewModel: ProductsViewModelProtocol{
         products[row].image
     }
     
+    func idForRow(_ row: Int) -> Int?{
+        products[row].id
+    }
+    
+    func priceForRow(_ row: Int) -> Double?{
+        products[row].price
+    }
+    
+    func descriptionForRow(_ row: Int) -> String?{
+        products[row].description
+    }
+    
+    func categoryForRow(_ row: Int) -> String?{
+        products[row].category
+    }
+    
+    func ratingForRow(_ row: Int) -> Rating?{
+        products[row].rating
+    }
+    
     weak var delegate: ProductsViewModelDelegate?
     
-    private var products = [Product](){
+    public var products = [Product](){
         didSet{
             self.delegate?.didFetchProducts()
         }
