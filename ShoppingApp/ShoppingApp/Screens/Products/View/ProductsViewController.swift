@@ -48,6 +48,10 @@ final class ProductsViewController: UIViewController {
         
 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false // Tab barın gösterilmesini sağlar.
+    }
 
 
 }
@@ -55,7 +59,16 @@ final class ProductsViewController: UIViewController {
 extension ProductsViewController: UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        let detailsViewController = DetailsViewController()
+        detailsViewController.imageUrl = viewModel.imageUrl(indexPath.row)
+        detailsViewController.id = viewModel.idForRow(indexPath.row)
+        detailsViewController.titleOfProduct = viewModel.titleForRow(indexPath.row)
+        detailsViewController.price = viewModel.priceForRow(indexPath.row)
+        detailsViewController.descriptionOfProduct = viewModel.descriptionForRow(indexPath.row)
+        detailsViewController.category = viewModel.categoryForRow(indexPath.row)
+        detailsViewController.rating = viewModel.ratingForRow(indexPath.row)
+        navigationController?.pushViewController(detailsViewController,
+                                                 animated: true)
     }
     
 }
