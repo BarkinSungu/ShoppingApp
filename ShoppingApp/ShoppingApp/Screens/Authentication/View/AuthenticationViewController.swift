@@ -9,6 +9,8 @@ import UIKit
 import Firebase
 
 class AuthenticationViewController: UIViewController {
+    
+    let database = Database()
 
     @IBOutlet var headerText: UILabel!
     @IBOutlet var emailText: UILabel!
@@ -114,6 +116,8 @@ class AuthenticationViewController: UIViewController {
                     if error != nil{
                         self.alertMessage(title: "Error", message: "Check internet connection.")
                     }else{
+                        let userID = Auth.auth().currentUser?.uid
+                        self.database.addUserToDB(userID: userID ?? "") //creating account for registered user.
                         self.openMainPage()
                         
                     }

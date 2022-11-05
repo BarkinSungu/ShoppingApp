@@ -11,6 +11,7 @@ import Kingfisher
 class DetailsViewController: UIViewController {
     
     let tabBar = TabBarController()
+    let database = Database()
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var idText: UILabel!
@@ -21,49 +22,13 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var ratingText: UILabel!
     
     var imageUrl: String?
-//    {
-//        didSet{
-//            let url = URL(string: imageUrl ?? "")
-//            imageView.kf.setImage(with: url)
-//        }
-//    }
     var id: Int?
-//    {
-//        didSet{
-//            idText.text = String(id ?? 0)
-//        }
-//    }
     var titleOfProduct: String?
-//    {
-//        didSet{
-//            titleText.text = titleOfProduct
-//        }
-//    }
     var price: Double?
-//    {
-//        didSet{
-//            priceText.text = String(price ?? 0.0)
-//        }
-//    }
     var descriptionOfProduct: String?
-//    {
-//        didSet{
-//            descriptionText.text = descriptionOfProduct
-//        }
-//    }
     var category: String?
-//    {
-//        didSet{
-//            categoryText.text = category
-//        }
-//    }
     var rating: Rating?
-//    {
-//        didSet{
-//            ratingText.text = "\(rating?.rate ?? 0.0) / \(rating?.count ?? 0)"
-//        }
-//    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,5 +49,9 @@ class DetailsViewController: UIViewController {
         
         ratingText.text = "Rating: \(rating?.rate ?? 0.0) / \(rating?.count ?? 0)"
     }
-
+    
+    @IBAction func addToCardButtonTapped(_ sender: UIButton) {
+        database.addCommentDataToDB(productID: id ?? 0)
+    }
+    
 }

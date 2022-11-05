@@ -73,15 +73,27 @@
                         </label>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyK-sT-BpX">
+                    <rect key="frame" x="16" y="775.66666666666663" width="358" height="34.333333333333371"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Add to Card"/>
+                    <connections>
+                        <action selector="addToCardButtonTapped:" destination="-1" eventType="touchUpInside" id="oBc-Eg-vV8"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kyK-sT-BpX" secondAttribute="trailing" constant="16" id="079-Uk-hJb"/>
                 <constraint firstItem="Ze5-iJ-zEH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Bmp-HD-4So"/>
                 <constraint firstItem="Ze5-iJ-zEH" firstAttribute="top" secondItem="b8y-NQ-ERj" secondAttribute="bottom" constant="8" id="KbX-uf-IJ3"/>
                 <constraint firstItem="b8y-NQ-ERj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LZJ-Y4-Ph1"/>
                 <constraint firstItem="b8y-NQ-ERj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ReK-j9-j6v"/>
+                <constraint firstItem="kyK-sT-BpX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Um0-7N-jtC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ze5-iJ-zEH" secondAttribute="trailing" constant="16" id="s4e-lQ-J2f"/>
+                <constraint firstItem="kyK-sT-BpX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uWf-il-d6c"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="-12.085308056872037"/>
         </view>

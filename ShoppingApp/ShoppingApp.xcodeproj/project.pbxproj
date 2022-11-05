@@ -19,6 +19,7 @@
 		DA76E97D2914413A00138AE2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DA76E97C2914413A00138AE2 /* Kingfisher */; };
 		DA76E982291457EA00138AE2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E980291457EA00138AE2 /* DetailsViewController.swift */; };
 		DA76E983291457EA00138AE2 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA76E981291457EA00138AE2 /* DetailsViewController.xib */; };
+		DA76E9862916426100138AE2 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E9852916426100138AE2 /* Database.swift */; };
 		DA7CBAF3290AE155005AA0A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */; };
 		DA7CBAF7290AE6C2005AA0A8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF6290AE6C2005AA0A8 /* FirebaseAuth */; };
 		DA7CBAF9290AE6C2005AA0A8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF8290AE6C2005AA0A8 /* FirebaseFirestore */; };
@@ -63,6 +64,7 @@
 		DA76E97929138E4600138AE2 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		DA76E980291457EA00138AE2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DA76E981291457EA00138AE2 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		DA76E9852916426100138AE2 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAF4290AE166005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAFA290BC065005AA0A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		DA2EECC929083FCE00CD5C07 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				DA76E9842916424D00138AE2 /* Network */,
 				DA2EECCD2908400D00CD5C07 /* Plists */,
 				DA2EECCC2908400600CD5C07 /* Assets */,
 				DA2EECCB29083FFF00CD5C07 /* Delegates */,
@@ -245,6 +248,14 @@
 				DA76E981291457EA00138AE2 /* DetailsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DA76E9842916424D00138AE2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DA76E9852916426100138AE2 /* Database.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		DA7CBAFE290C1384005AA0A8 /* Profile */ = {
@@ -409,6 +420,7 @@
 				DA76E97629138CE900138AE2 /* Product.swift in Sources */,
 				DA2EECB629083E8500CD5C07 /* AppDelegate.swift in Sources */,
 				DA2EECB829083E8500CD5C07 /* SceneDelegate.swift in Sources */,
+				DA76E9862916426100138AE2 /* Database.swift in Sources */,
 				DA76E982291457EA00138AE2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
