@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        navigationController?.pushViewController(AuthenticationViewController(), animated: true)
+        
     }
 
-
+    @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
+        navigationController?.pushViewController(AuthenticationViewController(), animated: true)
+    }
+    
 }
 
