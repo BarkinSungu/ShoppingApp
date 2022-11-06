@@ -12,6 +12,7 @@ public let fakeStoreServiceProvider = MoyaProvider<FakeStoreService>()
 
 public enum FakeStoreService {
     case getProducts
+    case getProduct(id: Int)
 }
 
 extension FakeStoreService: TargetType{
@@ -23,6 +24,8 @@ extension FakeStoreService: TargetType{
         switch self{
         case .getProducts:
             return "/products"
+        case .getProduct(id: let id):
+            return "/products/\(id)"
         }
     }
     
@@ -33,6 +36,8 @@ extension FakeStoreService: TargetType{
     public var task: Moya.Task {
         switch self{
         case .getProducts:
+            return .requestPlain
+        case .getProduct(id: let id):
             return .requestPlain
         }
     }

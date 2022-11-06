@@ -20,6 +20,8 @@
 		DA76E982291457EA00138AE2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E980291457EA00138AE2 /* DetailsViewController.swift */; };
 		DA76E983291457EA00138AE2 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA76E981291457EA00138AE2 /* DetailsViewController.xib */; };
 		DA76E9862916426100138AE2 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E9852916426100138AE2 /* Database.swift */; };
+		DA76E991291689DE00138AE2 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76E98F291689DE00138AE2 /* BasketViewController.swift */; };
+		DA76E992291689DE00138AE2 /* BasketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA76E990291689DE00138AE2 /* BasketViewController.xib */; };
 		DA7CBAF3290AE155005AA0A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */; };
 		DA7CBAF7290AE6C2005AA0A8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF6290AE6C2005AA0A8 /* FirebaseAuth */; };
 		DA7CBAF9290AE6C2005AA0A8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA7CBAF8290AE6C2005AA0A8 /* FirebaseFirestore */; };
@@ -65,6 +67,8 @@
 		DA76E980291457EA00138AE2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DA76E981291457EA00138AE2 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		DA76E9852916426100138AE2 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		DA76E98F291689DE00138AE2 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		DA76E990291689DE00138AE2 /* BasketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketViewController.xib; sourceTree = "<group>"; };
 		DA7CBAF2290AE155005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAF4290AE166005AA0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA7CBAFA290BC065005AA0A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		DA2EECCA29083FD500CD5C07 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DA76E98D291689BB00138AE2 /* Basket */,
 				DA76E97E2914577B00138AE2 /* Details */,
 				DA7CBB04290CFF22005AA0A8 /* Search */,
 				DA7CBAFE290C1384005AA0A8 /* Profile */,
@@ -256,6 +261,23 @@
 				DA76E9852916426100138AE2 /* Database.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DA76E98D291689BB00138AE2 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				DA76E98E291689C300138AE2 /* View */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		DA76E98E291689C300138AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA76E98F291689DE00138AE2 /* BasketViewController.swift */,
+				DA76E990291689DE00138AE2 /* BasketViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DA7CBAFE290C1384005AA0A8 /* Profile */ = {
@@ -396,6 +418,7 @@
 				DA2EECBD29083E8500CD5C07 /* Main.storyboard in Resources */,
 				DA7CBB09290CFF3B005AA0A8 /* SearchViewController.xib in Resources */,
 				DA7CBB1A2911464E005AA0A8 /* ProductsCollectionViewCell.xib in Resources */,
+				DA76E992291689DE00138AE2 /* BasketViewController.xib in Resources */,
 				DA76E983291457EA00138AE2 /* DetailsViewController.xib in Resources */,
 				DA7CBB16291143D4005AA0A8 /* ProductsViewController.xib in Resources */,
 				DA7CBAF3290AE155005AA0A8 /* GoogleService-Info.plist in Resources */,
@@ -411,6 +434,7 @@
 			files = (
 				DABECC6D29085B9100F62359 /* AuthenticationViewController.swift in Sources */,
 				DA76E97A29138E4600138AE2 /* ProductsViewModel.swift in Sources */,
+				DA76E991291689DE00138AE2 /* BasketViewController.swift in Sources */,
 				DA7CBB08290CFF3B005AA0A8 /* SearchViewController.swift in Sources */,
 				DA7CBB15291143D4005AA0A8 /* ProductsViewController.swift in Sources */,
 				DA7CBB192911464E005AA0A8 /* ProductsCollectionViewCell.swift in Sources */,

@@ -51,7 +51,8 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func addToCardButtonTapped(_ sender: UIButton) {
-        database.addCommentDataToDB(productID: id ?? 0)
+        database.addProductToBasket(productID: id ?? 0)
+        navigationController?.pushViewController(BasketViewController(), animated: true)
     }
     
 }

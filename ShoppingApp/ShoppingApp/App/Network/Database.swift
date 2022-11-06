@@ -14,15 +14,15 @@ final class Database{
     
     func addUserToDB(userID: String){
         let firestorePost = ["userID" : userID as String,
-                             "favorites": [] as [Int]] as [String : Any]
+                             "basket": [] as [Int]] as [String : Any]
         
         firestoreDatabase.collection("Users").document(userID).setData(firestorePost)
         
     }
     
-    func addCommentDataToDB(productID: Int){
+    func addProductToBasket(productID: Int){
         let ref = firestoreDatabase.collection("Users").document(userID ?? "")
-        ref.updateData(["favorites": FieldValue.arrayUnion([productID])])
+        ref.updateData(["basket": FieldValue.arrayUnion([productID])])
 
     }
     
